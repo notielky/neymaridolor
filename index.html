@@ -1,0 +1,145 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sabrina carpenter</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:40px;
+    }
+
+    .album{
+      width:100%;
+      max-width:1200px;
+    }
+
+    .titulo{
+      text-align:center;
+      color:white;
+      font-size:3rem;
+      margin-bottom:40px;
+      text-shadow:2px 2px 10px rgba(0,0,0,0.3);
+    }
+
+    .galeria{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap:25px;
+    }
+
+    .foto{
+      background:white;
+      border-radius:20px;
+      overflow:hidden;
+      box-shadow:0 8px 20px rgba(0,0,0,0.2);
+      transition:0.4s;
+      position:relative;
+    }
+
+    .foto:hover{
+      transform:translateY(-10px) scale(1.03);
+    }
+
+    .foto img{
+      width:100%;
+      height:300px;
+      object-fit:cover;
+      display:block;
+    }
+
+    .descricao{
+      padding:15px;
+      text-align:center;
+    }
+
+    .descricao h2{
+      color:#ff4f81;
+      margin-bottom:10px;
+      font-size:1.3rem;
+    }
+
+    .descricao p{
+      color:#555;
+      font-size:0.95rem;
+    }
+
+    .foto::before{
+      content:"❤";
+      position:absolute;
+      top:10px;
+      right:15px;
+      font-size:1.5rem;
+      color:#ff4f81;
+      opacity:0.8;
+    }
+
+    @media(max-width:600px){
+      .titulo{
+        font-size:2rem;
+      }
+
+      .foto img{
+        height:220px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="album">
+
+    <h1 class="titulo"> SABRINA CARPENTER💖</h1>
+
+    <div class="galeria">
+
+      <div class="foto">
+        <img src="download.jpg" alt="Foto 1">
+        <div class="descricao">
+         
+        </div>
+      </div>
+
+      <div class="foto">
+        <img src="download (2).jpg" alt="Foto 2">
+        <div class="descricao">
+         
+        </div>
+      </div>
+
+      <div class="foto">
+        <img src="download (1).jpg" alt="Foto 3">
+        <div class="descricao">
+          
+        </div>
+      </div>
+
+      <div class="foto">
+        <img src="foto4.jpg" alt="Foto 4">
+        <div class="descricao">
+          
+          <
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
